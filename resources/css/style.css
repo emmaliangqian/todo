@@ -84,6 +84,10 @@ header button {
   -moz-appearance: none;
 }
 
+header #theme-toggle {
+  right: 75px;
+}
+
 header button svg {
   width: 16px;
   height: 16px;
@@ -252,4 +256,70 @@ ul.todo#completed:after {
   text-align: center;
   font-size: 12px;
   color: #aaa;
+}
+
+/* Dark Theme Styles */
+body.dark-theme {
+  background: #1a1a1a;
+  color: #e0e0e0;
+}
+
+body.dark-theme header {
+  background: #2d2d2d;
+}
+
+body.dark-theme header input {
+  background: rgba(255, 255, 255, 0.1);
+  color: #e0e0e0;
+}
+
+body.dark-theme header input::-webkit-input-placeholder {
+  color: rgba(224, 224, 224, 0.75);
+}
+
+body.dark-theme header input:-moz-input-placeholder {
+  color: rgba(224, 224, 224, 0.75);
+}
+
+body.dark-theme header input::-moz-input-placeholder {
+  color: rgba(224, 224, 224, 0.75);
+}
+
+body.dark-theme header input:-ms-input-placeholder {
+  color: rgba(224, 224, 224, 0.75);
+}
+
+body.dark-theme header button {
+  background: #404040;
+}
+
+body.dark-theme header button svg .fill {
+  fill: #e0e0e0;
+}
+
+body.dark-theme ul.todo li {
+  background: #2d2d2d;
+  color: #e0e0e0;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-theme ul.todo li .buttons button:last-of-type:before {
+  background: #404040;
+}
+
+body.dark-theme ul.todo li .buttons button.remove svg .fill {
+  fill: #888;
+}
+
+body.dark-theme ul.todo li .buttons button.remove:hover svg .fill {
+  fill: #e85656;
+}
+
+body.dark-theme ul.todo#completed:before {
+  background: #404040;
+}
+
+body.dark-theme ul.todo#todo:after,
+body.dark-theme ul.todo#completed:after {
+  color: #888;
 }
